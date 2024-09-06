@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h2>onblur example</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" onblur="handleBlur()" Enter your name>
+
+        <button onclick="clicked()">Click me</button>
+
+        <button ondblclick="doubleClick()">Double Click</button><br><br>
+
+        <img onmouseover="imgalert()"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnbSiJL1nZpYB77DKJptCgw_drUjJ8DmbGWA&s">
+        <br><br>
+        
+        <select id="color" onchange="handleChange()">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+        </select>
+
+    </form>
+
+    <script>
+        function handleBlur() {
+            alert("Input field has lost focus!");
+        }
+
+        function clicked() {
+            alert("You have clicked the button");
+        }
+
+        function doubleClick() {
+            alert("you have double clicked the button");
+        }
+
+        function imgalert() {
+            alert("Mouse us over the image");
+        }
+
+        function handleChange() {
+            var color = document.getElementById('color').value;
+            alert('you have selected: ' + color);
+        }
+    </script>
+</body>
+
+</html>

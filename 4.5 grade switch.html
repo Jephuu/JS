@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let grade=prompt("Enter a Grade(A-F):");
+        let gradeValue;
+
+        switch(grade){
+            case 'A':
+            gradeValue=("Excellent");
+                break;
+            case 'B':
+            gradeValue=("Wow");
+                break;
+            case 'C':
+            gradeValue=("Good");
+                break;
+            case 'D':
+            gradeValue=("Not Bad");
+                break;
+            case 'E':
+            gradeValue=("Pass");
+                break;
+            case 'F':
+            gradeValue=("Fail");
+                break;
+            default:
+                    grade = "Invalid Grade";
+                     
+        }
+           
+        console.log("You Grade is " +grade+ " = " +gradeValue);
+       
+
+    </script>
+</body>
+</html>

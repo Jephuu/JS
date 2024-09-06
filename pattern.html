@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <!-- let n=parseInt(prompt("Enter the no.of rows "));
+        for (let i = 1; i <= n; i++) {
+let stars = '';
+for (let j = 1; j <= i; j++) {
+stars += '*';
+}
+console.log(stars);
+} -->
+
+
+ <div id="pattern"></div>
+
+<script>
+    // const rows = 10; // Number of rows for the star pattern
+    // // let pattern = '';
+
+    // for (let i = 1; i <= rows; i++) {
+    //     let pattern = '';
+    //     for (let j = 1; j <= i; j++) {
+    //         pattern += '* ';
+            
+    //     }
+    //     pattern += '<br>'; // HTML line break for a new row
+    // }
+
+    // document.getElementById('pattern').innerHTML = pattern;
+
+
+
+    const n = 10;
+
+    for (let i = 1; i <= n; i++) {
+let stars = '';
+for (let j = 1; j <= i; j++) {
+stars += '*';
+}
+document.getElementById('pattern').innerHTML = stars;
+}
+</script>
+</body>
+</html>
+
+

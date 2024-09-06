@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div class="container">
+        <div class="bulb">
+            <img src="bulb off.jpeg" alt="">
+            <br>
+
+            <button  id="turnon" type="button"  onclick="lightOn('on')" class="light">ON</button>
+            <button id="turnoff" type="button" onclick="lightOff('off')" class="light">OFF</button>
+        </div>
+    </div> --> 
+
+    <img src="bulb off.jpeg" id="image" alt="">
+    <button  onclick="on()">On</button>
+    <button onclick="off()">Off</button>
+    <script>
+        function on() {
+            document.getElementById('image').src="bulb on.jpg";
+        }
+        function off() {
+            document.getElementById('image').src="bulb off.jpeg";
+        }
+    </script>
+
+    <!-- <div class="container">
+		<img id="bulbImg" src="bulb off.jpeg" alt="Blub">
+		<button id="bulb-button" type="button" onclick="changeBulbImage()">Bulb ON/OFF</button>	
+	</div>
+
+
+    <script src="bulb.js"></script>
+ -->
+</body>
+</html>

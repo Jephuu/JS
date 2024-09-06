@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;    /* vertically center */
+    height: 100vh;      /* full viewport height */
+    background-color: #f0f0f0;      /* light grey */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+.color-display {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    background-color: #ffffff;      /* white */
+
+}

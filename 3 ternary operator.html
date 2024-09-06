@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Ternary Operator/ Conditional Operator
+        // condition ? expression1 : expression2
+
+// program to check pass or fail
+        let marks=parseInt(prompt("Enter the marks :"));
+        let result=(marks>=40)?'Passed':'Failed';
+        window.alert(`You have ${result} the exam.`);
+
+//Question: Check the age to determine the eligibility to vote
+        let age=parseInt(prompt("Enter your age:"));
+        let eligibility=(age>=18)?'You are eligible to vote':'You are not eligible to vote!';
+        window.alert(eligibility);
+
+//Question: Check inputted no is positive or negative
+        let num = parseInt(prompt("Enter Number"));
+         check = (num>=0)? "Num is Positive":"Num is Negative";
+         window.alert(check);
+
+</script>
+</body>
+</html>

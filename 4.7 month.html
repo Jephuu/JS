@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Calender
+
+        let month = parseInt(prompt("Enter number between 1-12 for respective month"));
+        let dispmonth;
+        switch (month) {
+            case 1:
+                dispmonth = "January";
+                break;
+            case 2:
+                dispmonth = "February";
+                break;
+            case 3:
+                dispmonth = "March";
+                break;
+            case 4:
+                dispmonth = "April";
+                break;
+            case 5:
+                dispmonth = "May";
+                break;
+            case 6:
+                dispmonth = "June";
+                break;
+            case 7:
+                dispmonth = "July";
+                break;
+            case 8:
+                dispmonth = "August";
+                break;
+            case 9:
+                dispmonth = "September";
+                break;
+            case 10:
+                dispmonth = "October";
+                break;
+            case 11:
+                dispmonth = "November";
+                break;
+            case 12:
+                dispmonth = "December";
+                break;
+            default:
+                dispmonth = "Invalid month number";
+        }
+        window.alert("Month " + month + " is " + dispmonth);
+    </script>
+</body>
+</html>

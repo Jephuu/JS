@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="phonenumber">Phone Number :</label>
+        <input type="number" id="phonenumber" name="phonenumber">
+        <label for="emailid">Email id :</label>
+        <input type="email" id="emailid" name="emailid">
+        <input type="submit" value="submit">
+
+    </form>
+
+    <script>
+        function validateForm(){
+            var username =document.getElementById('username').value;
+            var phone = document.getElementById('phonenumber').value;
+            var email = document.getElementById('emailid').value;
+            
+            var phoneRegex = /^\d{10}$/; // To validate a 10-digit phone number
+            var emailRegex = /^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$/;
+            
+            if(username.trim() ===''){ //// trim() is used to get rid of empty spaces in between
+                alert('Username cannot be empty');
+                return false; //prevent form submission
+            }
+            else if(!phoneRegex.test(phone)){
+                alert('Please enter exactly 10 digits.');
+                return false;
+            }
+
+            else if(!emailRegex.test(email)){
+                alert("Enter valid email");
+                return false;
+
+            }
+
+        return true; //Allow form submission
+
+    }
+    </script>
+</body>
+</html>
